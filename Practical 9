@@ -1,0 +1,17 @@
+;INC SPA SNA SZE
+INP
+STA 0xFFF
+INP
+STA 0xFFE
+SPA
+BUN NEGATIVE
+SNA
+BUN POSITIVE
+NEGATIVE:   CMA
+            INC
+            ADD 0xFFF
+            OUT
+            HLT
+POSITIVE:   ADD 0xFFF
+            OUT
+            HLT

@@ -1,0 +1,20 @@
+INP
+STA 0xFFF
+INP
+STA 0xFFE
+CMA 
+AND 0xFFF
+STA 0xFFB
+LDA 0xFFF
+CMA 
+AND 0xFFE
+BUN Or
+Or:   CMA
+        STA 0xFE0
+        LDA 0xFFB
+        CMA
+        AND 0xFE0
+        CMA
+        OUT
+        STA 0xFF9
+HLT

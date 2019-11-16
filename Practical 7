@@ -1,0 +1,13 @@
+;ADD LDA STA BUN ISZ
+INP
+STA TEMP
+LDA A
+STA 0xFFF
+BUN BRANCH
+BRANCH: ISZ TEMP
+        CLA
+        ADD TEMP
+        OUT
+        HLT
+TEMP: .data 1 -1
+A: .data 1 100

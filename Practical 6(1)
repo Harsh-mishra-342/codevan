@@ -1,0 +1,23 @@
+START:  INP
+        STA Num1
+        INP
+        STA Num2
+        BUN Loop
+
+Loop:   LDA Sum
+        ADD Num1
+        STA Sum
+        LDA A
+        CMA
+        INC
+        ADD Num2
+        STA Num2
+        SZA
+        BUN Loop
+        LDA Sum
+        OUT
+        HLT
+Sum: .data 1 0
+Num2: .data 1 0
+Num1: .data 1 0
+A: .data 1 1

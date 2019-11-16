@@ -1,0 +1,9 @@
+INP
+ADD Sum
+STA Sum
+INP
+ADD Sum
+STA Sum
+OUT
+HLT
+Sum: .data 1 0

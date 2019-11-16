@@ -1,0 +1,5 @@
+LDA A
+CMA
+OUT
+HLT
+A: .data 1 1

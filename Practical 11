@@ -1,0 +1,11 @@
+Start: INP
+       SNA
+       BUN Add
+       BUN Print
+Add: ADD Sum
+     STA Sum
+     BUN Start
+Print: LDA Sum
+       OUT
+       HLT
+Sum:.data 1 0
